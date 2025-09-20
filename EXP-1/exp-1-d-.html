@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery with Thumbnails</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .gallery a {
+            display: inline-block;
+            border: 3px solid #2980b9;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .gallery img {
+            display: block;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image Gallery with Thumbnails</h1>
+
+    <div class="gallery">
+        <!-- Thumbnail 1 -->
+        <a href="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?_gl=1*1ohftr*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDI2ODUkajU4JGwwJGgw" target="_blank">
+            <img src="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?_gl=1*1ohftr*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDI2ODUkajU4JGwwJGgw" alt="Image 1" />
+        </a>
+
+        <!-- Thumbnail 2 -->
+        <a href="https://images.pexels.com/photos/461940/pexels-photo-461940.jpeg?_gl=1*yidsjr*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDI1NzckajU1JGwwJGgw" target="_blank">
+            <img src="https://images.pexels.com/photos/461940/pexels-photo-461940.jpeg?_gl=1*yidsjr*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDI1NzckajU1JGwwJGgw" alt="Image 2" />
+        </a>
+
+        <!-- Thumbnail 3 -->
+        <a href="https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?_gl=1*mymu2*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDI3NTkkajQ4JGwwJGgw" target="_blank">
+            <img src="https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?_gl=1*mymu2*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDI3NTkkajQ4JGwwJGgw" alt="Image 3" />
+        </a>
+
+        <!-- Thumbnail 4 -->
+        <a href="https://images.pexels.com/photos/17255591/pexels-photo-17255591.jpeg?_gl=1*1ufxo9r*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDI4MDAkajckbDAkaDA." target="_blank">
+            <img src="https://images.pexels.com/photos/17255591/pexels-photo-17255591.jpeg?_gl=1*1ufxo9r*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDI4MDAkajckbDAkaDA." alt="Image 4" />
+        </a>
+
+        <!-- Thumbnail 5 -->
+        <a href="https://images.pexels.com/photos/16948190/pexels-photo-16948190.jpeg?_gl=1*1h1wobh*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDI4MjgkajU4JGwwJGgw" target="_blank">
+            <img src="https://images.pexels.com/photos/16948190/pexels-photo-16948190.jpeg?_gl=1*1h1wobh*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDI4MjgkajU4JGwwJGgw" alt="Image 5" />
+        </a>
+
+        <!-- Thumbnail 6 -->
+        <a href="https://images.pexels.com/photos/4293307/pexels-photo-4293307.jpeg?_gl=1*6rb1x9*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDI4NzIkajE0JGwwJGgw" target="_blank">
+            <img src="https://images.pexels.com/photos/4293307/pexels-photo-4293307.jpeg?_gl=1*6rb1x9*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDI4NzIkajE0JGwwJGgw" alt="Image 6" />
+        </a>
+    </div>
+
+</body>
+</html>

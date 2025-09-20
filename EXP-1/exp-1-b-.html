@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Hyperlinks with &lt;a&gt; Tag</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Working of Hyperlinks Using &lt;a&gt; Tag</h1>
+
+    <h2>1. Basic Hyperlink with <code>href</code></h2>
+    <p>
+        Click this link to visit 
+        <a href="https://www.wikipedia.org/">Wikipedia</a>.
+    </p>
+
+    <h2>2. Hyperlink with <code>target="_blank"</code> Attribute</h2>
+    <p>
+        This link opens in a new tab/window: 
+        <a href="https://www.google.com" target="_blank">Google</a>.
+    </p>
+
+    <h2>3. Hyperlink with <code>target="_self"</code> Attribute</h2>
+    <p>
+        This link opens in the same tab (default behavior): 
+        <a href="https://www.example.com" target="_self">Example.com</a>.
+    </p>
+
+    <h2>4. Email Hyperlink Using <code>mailto:</code></h2>
+    <p>
+        Click here to send an email: 
+        <a href="mailto:someone@example.com">Send Email</a>.
+    </p>
+
+    <h2>5. Link to a Section Within the Same Page</h2>
+    <p>
+        Jump to the footer section below: 
+        <a href="#footer">Go to Footer</a>.
+    </p>
+
+    <div style="height: 500px;"></div> 
+
+    <h2 id="footer">Footer Section</h2>
+    <p>This is the footer of the page.</p>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Images with Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .profile-container img {
+            border-radius: 50%;
+            border: 3px solid #2980b9;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .profile-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click on the Images to Visit Profiles</h1>
+
+    <div class="profile-container">
+        
+        <a href="https://www.yourprofile.com" target="_blank">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/19/18/30/1000_F_519183046_PsGbpaJsEa22P9VFAgAkvdnGwuDmvRPm.jpg" alt="Your Profile" height="150" width="150" />
+        </a>
+        
+        
+        <a href="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?_gl=1*eeybn1*_ga*NDMyMDY5OTIxLjE3NTgzNDI1NzM.*_ga_8JE65Q40S6*czE3NTgzNDI1NzIkbzEkZzEkdDE3NTgzNDMyNjkkajU3JGwwJGgw" target="_blank">
+            <img src="https://as2.ftcdn.net/v2/jpg/02/92/95/17/1000_F_292951705_zv47wnXkjzHzSouYLpYcNgTOOosDv1ml.jpg" alt="Friend's Profile" height="150" width="150" />
+        </a>
+    </div>
+
+</body>
+</html>
