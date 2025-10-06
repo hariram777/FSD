@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frames Example</title>
+</head>
+
+<!-- You can switch between rows or cols -->
+<!-- Divide into 3 rows (horizontal) -->
+<!-- <frameset rows="30%,40%,30%" noresize> -->
+
+<!-- Divide into 3 columns (vertical) -->
+<frameset cols="33%,34%,33%" noresize>
+    <frame src="image.html" name="imgFrame">
+    <frame src="para.html" name="paraFrame">
+    <frame src="link.html" name="linkFrame">
+
+    <!-- NoFrames Section -->
+    <noframes>
+        <body>
+            <p>Your browser does not support frames.</p>
+        </body>
+    </noframes>
+</frameset>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Image Frame</h3>
+    <img src="https://via.placeholder.com/250x150" alt="Sample Image">
+</body>
+</html>
+
