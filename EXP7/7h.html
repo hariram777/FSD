@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User-Defined Object Complete</title>
+</head>
+<body>
+  <h2>User-Defined Object Demo</h2>
+  <div id="output"></div>
+
+  <script>
+    let output = document.getElementById("output");
+    function Student(name, age, grade) {
+      this.name = name;
+      this.age = age;
+      this.grade = grade;
+      this.display = function() {
+        return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
+      }
+      this.getName = function() {
+        return this.name;
+      }
+      this.setGrade = function(newGrade) {
+        this.grade = newGrade;
+      }
+    }
+    let student1 = new Student("Hari", 18, "A");
+
+    output.innerHTML += "Original Student Data: " + student1.display() + "<br>";
+
+    student1.setGrade("A+");
+    output.innerHTML += "After updating grade: " + student1.display() + "<br>";
+    output.innerHTML += "Student Name using getter: " + student1.getName() + "<br>";
+  </script>
+</body>
+</html>
