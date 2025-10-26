@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demo</title>
+    <style>
+        /* Simple Selectors */
+
+        /* Element Selector */
+        p {
+            color: green;
+        }
+
+        /* ID Selector */
+        #header {
+            font-size: 24px;
+            color: blue;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Group Selector */
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Combinator Selectors */
+
+        /* Descendant Selector */
+        section p {
+            color: red;
+        }
+
+        /* Child Selector */
+        section > p {
+            color: purple;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            font-size: 18px;
+        }
+
+        /* General Sibling Selector */
+        h2 ~ p {
+            font-size: 14px;
+        }
+
+        /* Pseudo-class Selectors */
+        /* Hover */
+        a:hover {
+            color: red;
+        }
+
+        /* First child */
+        p:first-child {
+            font-weight: bold;
+        }
+
+        /* Pseudo-element Selectors */
+        /* Before */
+        h2::before {
+            content: "▶ ";
+            color: green;
+        }
+
+        /* After */
+        h2::after {
+            content: " ◀";
+            color: red;
+        }
+
+        /* Attribute Selectors */
+        a[href^="https"] {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Selectors Demo</h1>
+
+    <section>
+        <h2 id="header">This is a header with an ID</h2>
+        <p>This is a paragraph styled with an element selector (green color).</p>
+        <p class="highlight">This paragraph has a class selector (yellow background).</p>
+        <a href="https://example.com">Hover over me!</a>
+    </section>
+
+    <section>
+        <h2>Sibling Selectors</h2>
+        <p>This paragraph is an adjacent sibling to the one above it (smaller text).</p>
+        <p>This paragraph is a general sibling to the previous ones (even smaller text).</p>
+    </section>
+
+</body>
+</html>
